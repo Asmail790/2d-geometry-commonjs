@@ -2,9 +2,8 @@
   "name": "2d-geometry",
   "version": "3.0.0",
   "description": "Performant & ergonomic 2D geometry in typescript",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "sideEffects": false,
   "scripts": {
@@ -12,10 +11,6 @@
     "build": "tsc",
     "test": "cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha --recursive --experimental-modules --es-module-specifier-resolution=node",
     "generate-docs": "jsdoc -c ./.jsdoc.json --verbose"
-  },
-  "exports": {
-    ".": "./dist/index.js",
-    "./svg": "./dist/svg/index.js"
   },
   "repository": {
     "type": "git",
